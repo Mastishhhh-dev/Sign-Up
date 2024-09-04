@@ -1,0 +1,97 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6E85B2, #B2C9AB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+.box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    background: #B2C9AB;
+    border-radius: 50%;
+    z-index: -1;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #444;
+}
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #666;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6E85B2;
+    box-shadow: 0 0 8px rgba(110, 133, 178, 0.5);
+    outline: none;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #6E85B2;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #5a6d99;
+    transform: translateY(-2px);
+}
+.thank-you-message {
+    display: none;
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 20px;
+    font-weight: 700;
+}
+.credit {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+}
